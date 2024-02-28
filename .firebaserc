@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "user-management-bd03b": {
+      "hosting": {
+        "angular-firebase": [
+          "user-management-bd03b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "user-management-bd03b"
+  }
+}

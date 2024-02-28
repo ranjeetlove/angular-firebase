@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="form" [formGroup]="createUser">
+        <mat-form-field appearance="outline">
+          <mat-label>User Name</mat-label>
+          <input matInput placeholder="name" formControlName="name">
+        </mat-form-field><br>
+        <mat-form-field appearance="outline">
+          <mat-label>User Decription</mat-label>
+          <input matInput placeholder="Descrtption" formControlName="description">
+        </mat-form-field><br>
+        <!-- <mat-form-field appearance="outline">
+        <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email" required>
+        </mat-form-field><br> -->
+        <button class="add-btn" [disabled]="!isFormValid()" mat-raised-button color="primary" (click)="openDialog()">Add user</button>
+    </div>     
+        <br><br>
+        <mat-divider></mat-divider>  
+</div>
